@@ -1,0 +1,127 @@
+<scm-back></scm-back>
+<md-content class="md-padding">
+    <md-tabs md-selected="selectedIndex" md-dynamic-height md-border-bottom md-autoselect>
+        <md-tab ng-repeat="tab in ctrl.tabs" label="{{tab.label}}">
+            <md-content layout="row" layout-wrap layout-padding>
+                <!--<scm-chart ng-click="ctrl.toggleRight($event)" ng-repeat="option in tab.param" option="option" flex="100"></scm-chart>
+               --> <scm-chart ng-repeat="option in tab.param" option="option" flex="100"></scm-chart>
+            </md-content>
+        </md-tab>
+    </md-tabs>
+</md-content>
+
+<md-sidenav class="md-sidenav-right md-whiteframe-4dp select" md-component-id="right">
+    <md-toolbar class="selectHead">
+        <div>
+            <md-button class="md-icon-button zan" aria-label="search" ng-click="ctrl.tabSearch()">
+                <md-icon md-svg-icon="../../../../static/images/zan.svg"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <!--<md-content layout-padding>
+            <div layout="column" flex class="sideSel">
+                <div flex ng-repeat="selectCard in ctrl.selectCards" class="{{selectCard.class}}">
+                    <h5>{{selectCard.name}}</h5>
+                    <div layout="column" flex>
+                        <div flex ng-repeat="card in selectCard.cards">
+                            <md-checkbox ng-click="ctrl.toggle(card,selectCard.value)">
+                                <span>{{card}}</span>
+                            </md-checkbox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </md-content>-->
+    <md-content layout-padding>
+        <div layout="column" flex class="sideSel">
+        <div flex class="first">
+            <div layout="column" flex>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                        <span>对公网银转账</span>
+                    </md-checkbox>
+                </div>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                        <span>房产质押</span>
+                    </md-checkbox>
+                </div>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                        <span>股权质押</span>
+                    </md-checkbox>
+                </div>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                        <span>手机银行转账</span>
+                    </md-checkbox>
+                </div>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                        <span>理财产品</span>
+                    </md-checkbox>
+                </div>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                        <span>最新活动</span>
+                    </md-checkbox>
+                </div>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                        <span>以往活动</span>
+                    </md-checkbox>
+                </div>
+            </div>
+        </div>
+        <div flex class="second">
+            <div layout="column" flex>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)" class="md-checked">
+                        <span>一般投诉</span>
+                    </md-checkbox>
+                </div>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                        <span>重大投诉</span>
+                    </md-checkbox>
+                </div>
+            </div>
+            </fieldset>
+        </div>
+        <div flex class="third">
+            <div layout="column" layout-wrap flex>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                        <span>微信</span>
+                    </md-checkbox>
+                </div>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)"">
+                    <span>固定电话</span>
+                    </md-checkbox>
+                </div>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                        <span>QQ</span>
+                    </md-checkbox>
+                </div>
+                <div flex>
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                        <span>手机</span>
+                    </md-checkbox>
+                </div>
+            </div>
+        </div>
+        <div flex class="forth">
+            <div layout="column" layout-wrap flex>
+                <md-radio-group ng-model="data.group1">
+                    <md-radio-button value="day">本日</md-radio-button>
+                    <md-radio-button value="week">本周</md-radio-button>
+                    <md-radio-button value="month">本月</md-radio-button>
+                </md-radio-group>
+            </div>
+        </div>
+        </div>
+    </md-content>
+</md-sidenav>

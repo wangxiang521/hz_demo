@@ -1,0 +1,71 @@
+<md-toolbar md-scroll-shrink class="listBar">
+    <div class="md-toolbar-tools">
+        <section layout="row" layout-align="center center">
+            <md-button class="groupX" ng-click="ctrl.goResult()">选定</md-button>
+            <md-button class="groupX" ng-click="ctrl.delCheck()">删除</md-button>
+            <md-button class="groupX">过滤</md-button>
+            <md-button class="groupX">扩展</md-button>
+        </section>
+    </div>
+</md-toolbar>
+
+<md-content flex class="listBox">
+    <md-list flex layout="column">
+        <md-list-item class="listItem" flex layout="row">
+                <div class="listLeft" flex="3">
+                    <md-checkbox ng-click="ctrl.toggle(item, selected)"></md-checkbox>
+                </div>
+                <div class="listRight md-list-item-text" flex="95">
+                    <h4>客服被投诉情况总览<h4>
+                </div>
+        </md-list-item>
+        <md-list-item class="listItem" flex layout="row">
+            <div class="listLeft" flex="3">
+                <md-checkbox ng-click="ctrl.toggle(item, selected)"></md-checkbox>
+            </div>
+            <div class="listRight md-list-item-text" flex="95">
+                <h4>客服被投诉问题汇总</h4>
+            </div>
+        </md-list-item>
+        <md-list-item class="listItem" flex layout="row">
+            <div class="listLeft" flex="3">
+                <md-checkbox ng-click="ctrl.toggle(item, selected)"></md-checkbox>
+            </div>
+            <div class="listRight md-list-item-text" flex="95">
+                <h4>客服被投诉业务汇总</h4>
+            </div>
+        </md-list-item>
+        <md-list-item class="listItem" flex layout="row">
+            <div class="listLeft" flex="3">
+                <md-checkbox ng-click="ctrl.toggle(item, selected)"></md-checkbox>
+            </div>
+            <div class="listRight md-list-item-text" flex="95">
+                <h4>客服业务咨询回答话术</h4>
+            </div>
+        </md-list-item>
+        <md-list-item class="listItem" flex layout="row">
+            <div class="listLeft" flex="3">
+                <md-checkbox ng-click="ctrl.toggle(item, selected)"></md-checkbox>
+            </div>
+            <div class="listRight md-list-item-text" flex="95">
+                <h4>客服投诉业务回答流程</h4>
+            </div>
+        </md-list-item>
+        <md-list-item class="listItem" flex layout="row">
+            <div class="listLeft" flex="3">
+                <md-checkbox ng-click="ctrl.toggle(item, selected)"></md-checkbox>
+            </div>
+            <div class="listRight md-list-item-text" flex="95">
+                <h4>客服最常被投诉的业务</h4>
+            </div>
+        </md-list-item>
+        <md-list-item class="listItem" flex layout="row">
+            <div class="listLeft" flex="3">
+                <md-checkbox ng-click="ctrl.toggle(item, selected)"></md-checkbox>
+            </div>
+            <div class="listRight md-list-item-text" flex="95">
+                <h4>客服针对银行业务的问题</h4>
+            </div>
+        </md-list-item>
+    </md-list>
+</md-content>

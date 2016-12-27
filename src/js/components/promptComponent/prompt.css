@@ -1,0 +1,27 @@
+.addBox{
+    border: 3px  solid transparent;
+    background: #fff;
+    padding: 20px;
+    height: 440px;
+    -webkit-transition: box-shadow 1s;
+    -moz-transition: box-shadow 1s;
+    -ms-transition: box-shadow 1s;
+    -o-transition: box-shadow 1s;
+    transition: box-shadow 1s;
+}
+.addMore:hover{
+    cursor: pointer;
+}
+
+.addMore{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 500px;
+    height: 400px;
+    background: url("../../../../static/images/add.png") no-repeat center center;
+}
+.addMore:hover{
+    background: url("../../../../static/images/adda.png") no-repeat center center;
+}
